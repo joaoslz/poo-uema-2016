@@ -1,4 +1,4 @@
-package parte1.boasPraticas.aula02092016;
+package parte1.boasPraticas.aula01_02092016;
 
 class Divida {
 	
