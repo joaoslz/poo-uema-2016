@@ -4,8 +4,6 @@ class Divida {
 	
 	String credor;
 	private double total;
-	private double valorPago;
-	
 	
 	public Divida(double total) {
 		

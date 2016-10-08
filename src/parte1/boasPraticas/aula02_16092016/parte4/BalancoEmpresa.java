@@ -1,6 +1,5 @@
 package parte1.boasPraticas.aula02_16092016.parte4;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class BalancoEmpresa {

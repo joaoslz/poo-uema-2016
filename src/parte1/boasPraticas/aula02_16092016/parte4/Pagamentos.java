@@ -6,6 +6,8 @@ import java.util.Collection;
 
 public class Pagamentos extends ArrayList<Pagamento> {
 
+	private static final long serialVersionUID = -3372589653381819561L;
+	
 	private double valorPago;
 	//private ArrayList<Pagamento> historicoPagamentos = new ArrayList<Pagamento>();
 

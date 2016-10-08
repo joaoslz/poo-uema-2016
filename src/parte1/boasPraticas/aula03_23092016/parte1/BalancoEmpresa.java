@@ -1,6 +1,5 @@
 package parte1.boasPraticas.aula03_23092016.parte1;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 import parte1.boasPraticas.aula03_23092016.parte2.Divida;

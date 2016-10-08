@@ -1,11 +1,5 @@
 package parte1.boasPraticas.aula03_23092016.parte1;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-
 public class TestePagamentos {
 	
 	public static void main(String[] args) {
@@ -27,7 +21,7 @@ public class TestePagamentos {
 		//Iterable<Pagamento> lista = new Pagamentos();
 		
 		
-		Iterable<Pagamento> lista = pagamentos;
+//		Iterable<Pagamento> lista = pagamentos;
 		
 //		Iterator<Pagamento> iterator = lista.iterator();
 //		
@@ -43,9 +37,7 @@ public class TestePagamentos {
 		}
 		
 		
-		//....
 		
-		Serializable ps = pagamentos;
 		
 		
 		

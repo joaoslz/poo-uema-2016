@@ -1,8 +1,5 @@
 package parte1.boasPraticas.aula03_23092016.parte2;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
 public class BalancoEmpresa {
 
 	private ArmazenadorDeDividas bd;

@@ -1,21 +1,25 @@
 package parte1.boasPraticas.aula03_23092016.parte2;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
+import java.util.Optional;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-public final class Pagamentos implements Iterable<Pagamento>, Serializable {
+public final class Pagamentos implements Iterable<Pagamento> {
 
 	private double valorPago;
-	private final Collection<Pagamento> historicoPagamentos = new ArrayList<>();
+	private final Collection<Pagamento> pagamentos = new ArrayList<>();
     String texto;
 	
 	
-    public Collection<Pagamento> getHistoricoPagamentos() {
-		return Collections.unmodifiableCollection(historicoPagamentos);
+    public Collection<Pagamento> getPagamentos() {
+		return Collections.unmodifiableCollection(pagamentos);
 	}
     
     
@@ -34,35 +38,30 @@ public final class Pagamentos implements Iterable<Pagamento>, Serializable {
 	}
 
 	public void registra(Pagamento pagamento) {
-		historicoPagamentos.add(pagamento);
+		pagamentos.add(pagamento);
 		paga(pagamento.getValor());
 	}
 
 	
 	
-	public ArrayList<Pagamento> pagamentosAntesDe(Calendar data) {
-		ArrayList<Pagamento> pagamentosFiltrados = new ArrayList<Pagamento>();
-		for (Pagamento pagamento : this.historicoPagamentos) {
-			if (pagamento.getData().before(data)) {
-				pagamentosFiltrados.add(pagamento);
-			}
-		}
-		return pagamentosFiltrados;
+	public List<Pagamento> pagamentosAntesDe(Calendar data) {
+	
+		return this.pagamentos.stream()
+				           .filter( p -> (  p.getData().before(data) )  )
+				           .collect(Collectors.toList());
+	            
 	}
 
-	public ArrayList<Pagamento> pagamentosComValorMaiorQue(double valorMinimo) {
-		ArrayList<Pagamento> pagamentosFiltrados = new ArrayList<Pagamento>();
-		for (Pagamento pagamento : this.historicoPagamentos) {
-			if (pagamento.getValor() > valorMinimo) {
-				pagamentosFiltrados.add(pagamento);
-			}
-		}
-		return pagamentosFiltrados;
+	public List<Pagamento> pagamentosComValorMaiorQue(double valorMinimo) {
+		
+		return this.pagamentos.stream()
+		               .filter(p -> (p.getValor() > valorMinimo) )
+		               .collect( Collectors.toList() )
 	}
 
 	public ArrayList<Pagamento> pagamentosDo(String cnpjPagador) {
 		ArrayList<Pagamento> pagamentosFiltrados = new ArrayList<Pagamento>();
-		for (Pagamento pagamento : this.historicoPagamentos) {
+		for (Pagamento pagamento : this.pagamentos) {
 			if (pagamento.getCnpjPagador().equals(cnpjPagador)) {
 				pagamentosFiltrados.add(pagamento);
 			}
@@ -73,7 +72,7 @@ public final class Pagamentos implements Iterable<Pagamento>, Serializable {
 
 	@Override
 	public Iterator<Pagamento> iterator() {
-		return this.historicoPagamentos.iterator();
+		return this.pagamentos.iterator();
 	}
 	
 }

@@ -1,13 +1,12 @@
 package parte1.boasPraticas.aula03_23092016.parte1;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 
-public final class Pagamentos implements Iterable<Pagamento>, Serializable {
+public final class Pagamentos implements Iterable<Pagamento> {
 
 	private double valorPago;
 	private final Collection<Pagamento> historicoPagamentos = new ArrayList<>();
