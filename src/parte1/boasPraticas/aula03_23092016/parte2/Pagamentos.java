@@ -56,7 +56,7 @@ public final class Pagamentos implements Iterable<Pagamento> {
 		
 		return this.pagamentos.stream()
 		               .filter(p -> (p.getValor() > valorMinimo) )
-		               .collect( Collectors.toList() )
+		               .collect( Collectors.toList() );
 	}
 
 	public ArrayList<Pagamento> pagamentosDo(String cnpjPagador) {
