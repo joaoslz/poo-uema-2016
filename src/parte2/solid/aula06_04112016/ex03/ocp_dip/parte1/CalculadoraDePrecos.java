@@ -1,6 +1,8 @@
 package parte2.solid.aula06_04112016.ex03.ocp_dip.parte1;
 
 public class CalculadoraDePrecos {
+	
+	
 
     public double calcula(Compra produto) {
         

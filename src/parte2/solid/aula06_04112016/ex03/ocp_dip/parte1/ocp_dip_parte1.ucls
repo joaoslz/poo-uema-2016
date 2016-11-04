@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.10" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="parte2.solid.aula06_04112016.ex03.ocp_dip.parte1.CalculadoraDePrecos" 
+    project="poo-uema-2016" 
+    file="/poo-uema-2016/src/parte2/solid/aula06_04112016/ex03/ocp_dip/parte1/CalculadoraDePrecos.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="116" width="335" x="64" y="98"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="parte2.solid.aula06_04112016.ex03.ocp_dip.parte1.Frete" project="poo-uema-2016" 
+    file="/poo-uema-2016/src/parte2/solid/aula06_04112016/ex03/ocp_dip/parte1/Frete.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="116" width="335" x="540" y="50"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="parte2.solid.aula06_04112016.ex03.ocp_dip.parte1.TabelaDePrecoPadrao" 
+    project="poo-uema-2016" 
+    file="/poo-uema-2016/src/parte2/solid/aula06_04112016/ex03/ocp_dip/parte1/TabelaDePrecoPadrao.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="707" y="289"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="parte2.solid.aula06_04112016.ex03.ocp_dip.parte1.Compra" project="poo-uema-2016" 
+    file="/poo-uema-2016/src/parte2/solid/aula06_04112016/ex03/ocp_dip/parte1/Compra.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="136" width="335" x="50" y="358"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
