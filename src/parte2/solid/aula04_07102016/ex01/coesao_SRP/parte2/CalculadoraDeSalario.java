@@ -6,7 +6,7 @@ public class CalculadoraDeSalario {
 
 		//return funcionario.getCargo().getRegra().calcula(funcionario);
 		
-		return funcionario.calcula();
+		return funcionario.calculaSalario();
 
 	}
 

@@ -1,4 +1,4 @@
-package parte2.solid.aula04_07102016.ex01.coesao_SRP.parte2;
+package parte2.solid.aula04_07102016.ex01.coesao_SRP.parte1.copy;
 
 import java.util.Calendar;
 
@@ -40,9 +40,5 @@ public class Funcionario {
     public void setSalarioBase(double salarioBase) {
         this.salarioBase = salarioBase;
     }
-	public double calculaSalario() {
-		return this.cargo.getRegra().calcula(this);
-	}
 
 }
-

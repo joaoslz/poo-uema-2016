@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.10" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="parte2.solid.aula05_21102016.ex02.acoplamento.parte2.GeradorDeNotaFiscal" 
+    project="poo-uema-2016" 
+    file="/poo-uema-2016/src/parte2/solid/aula05_21102016/ex02/acoplamento/parte2/GeradorDeNotaFiscal.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="176" width="380" x="124" y="71"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="2" language="java" name="parte2.solid.aula05_21102016.ex02.acoplamento.parte2.AcaoAposGerarNota" 
+    project="poo-uema-2016" 
+    file="/poo-uema-2016/src/parte2/solid/aula05_21102016/ex02/acoplamento/parte2/AcaoAposGerarNota.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="96" width="367" x="131" y="351"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="3" language="java" name="parte2.solid.aula05_21102016.ex02.acoplamento.parte2.EnviadorDeEmail" 
+    project="poo-uema-2016" 
+    file="/poo-uema-2016/src/parte2/solid/aula05_21102016/ex02/acoplamento/parte2/EnviadorDeEmail.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="116" width="367" x="-73" y="497"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="parte2.solid.aula05_21102016.ex02.acoplamento.parte2.NotaFiscalDao" 
+    project="poo-uema-2016" 
+    file="/poo-uema-2016/src/parte2/solid/aula05_21102016/ex02/acoplamento/parte2/NotaFiscalDao.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="116" width="367" x="311" y="497"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="parte2.solid.aula05_21102016.ex02.acoplamento.parte2.NotaFiscal" 
+    project="poo-uema-2016" 
+    file="/poo-uema-2016/src/parte2/solid/aula05_21102016/ex02/acoplamento/parte2/NotaFiscal.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="778" y="237"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="6">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="7" name="acoes">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="8" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="9">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <realization id="10">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
